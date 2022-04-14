@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "d7b03a71-8df2-4b22-9505-10c9a89862f0",
+    "colId": "d44e3038-156a-44b8-a064-9406ab4b6869",
+    "containerId": "",
+    "name": "todos",
+    "url": "{{url}}/todos",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-04-13T03:51:36.401Z",
+    "modified": "2022-04-13T19:24:00.343Z",
+    "headers": [],
+    "params": [],
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json[0].id",
+        "action": "setto",
+        "value": "{{todo-id}}"
+      }
+    ],
+    "docs": "Get todos from typicode"
+  },
+  {
+    "_id": "61c23083-33d3-4691-b792-6e5e17fbb0a4",
+    "colId": "d44e3038-156a-44b8-a064-9406ab4b6869",
+    "containerId": "",
+    "name": "todos-id",
+    "url": "{{url}}/todos/{{todo-id}}",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-04-13T19:20:16.573Z",
+    "modified": "2022-04-13T19:20:16.573Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
